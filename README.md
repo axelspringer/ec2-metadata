@@ -49,6 +49,7 @@ sudo ifconfig lo0 alias 169.254.169.254
 
 ```
 docker run --rm -p 80:8111 -v `pwd`/ec2-metadata.json:/ec2-metadata.json pixelmilk/ec2-metadata --data /ec2-metadata.json
+```
 
 # License
 [MIT](/LICENSE)
