@@ -1,20 +1,74 @@
 {
-  "instanceIdentity": {
-    "document": {
-      "devpayProductCodes": null,
-      "availabilityZone": "us-west-2b",
-      "privateIp": "10.158.112.84",
-      "version": "2010-08-31",
-      "instanceId": "i-1234567890abcdef0",
-      "billingProducts": null,
-      "instanceType": "t2.micro",
-      "accountId": "123456789012",
-      "imageId": "ami-5fb8c835",
-      "pendingTime": "2016-11-19T16:32:11Z",
-      "architecture": "x86_64",
-      "kernelId": null,
-      "ramdiskId": null,
-      "region": "us-west-2"
+  "dynamicData": {
+    "instanceIdentity": {
+      "document": {
+        "devpayProductCodes": "null",
+        "availabilityZone": "us-west-2b",
+        "privateIp": "10.158.112.84",
+        "version": "2010-08-31",
+        "instanceId": "i-1234567890abcdef0",
+        "billingProducts": null,
+        "instanceType": "t2.micro",
+        "accountId": "123456789012",
+        "imageId": "ami-5fb8c835",
+        "pendingTime": "2016-11-19T16:32:11Z",
+        "architecture": "x86_64",
+        "kernelId": null,
+        "ramdiskId": null,
+        "region": "us-west-2"
+      }
     }
-  }
+  },
+  "userData": {
+    "environment_code" : "dev",
+    "environment_name" : "Development",
+    "app_code" : "mock",
+    "app_name" : "mock_app",
+    "app_email" : "nobody@nytimes.com",
+    "app_description": "Mock Metadata Description",
+    "cluster_code" : "cluster_code",
+    "cluster_name" : "cluser_name",
+    "cluster_stack" : "cluster_stack",
+    "instance_configuration_name" : "test1",
+    "hostname_suffix" : "test1",
+    "volume_sizes_gb" : 8,
+    "volume_devices" : "/dev/sda1",
+    "volume_mount_points" : "/",
+    "volume_snapshot_frequencies" : 0,
+    "snapshot_days_retained" : 7,
+    "region_code" : "iad2",
+    "hostname" : "mock-hostname",
+    "vpc_name" :"vpc",
+    "subnet_name" : "subnet",
+    "nimbul_key" :"key",
+    "build_tag" : "build_tag"
+  },
+  "metaData": {
+    "ami-id": "ami-1234",
+    "ami-launch-index": 0,
+    "ami-manifest-path": "(unknown)",
+    "local-ipv4": "172.16.0.136",
+    "availability-zone": "ww-region-1a",
+    "hostname": "mock-hostname",
+    "instance-action": "mock-instance-action",
+    "instance-id": "mock-instance-id",
+    "instance-type": "mock-instance-type",
+    "mac": "00:00:00:00:00:00",
+    "profile": "mock-profile",
+    "reservation-id":"mock-reservation-id",
+    "security-credentials": {
+        "user": "mock-user",
+        "AccessKeyId" : "mock-access-key",
+        "SecretAccessKey" : "mock-secret-key",
+        "Token": "mock-token",
+        "Expiration": "2112-12-31T11:59:59Z"
+    },
+    "security-groups": [
+        "mock-security-group"
+    ]
+  },
+  "versions": [
+    "2016-09-02",
+    "latest"
+  ]
 }

@@ -1,0 +1,11 @@
+[Unit]
+Description=EC2 Metdata server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/ec2-metadata
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

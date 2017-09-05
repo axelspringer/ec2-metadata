@@ -1,4 +1,4 @@
-// Copyright © 2017 Sebastian Döll <sebastian@katallaxie.me>
+// Copyright © 2017 Axel Springer SE
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -57,7 +57,7 @@ func init() {
 	// Here you will define your flags and configuration settings.
 	// Cobra supports persistent flags, which, if defined here,
 	// will be global for your application.
-	RootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.trabant.yaml)")
+	RootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.config.yaml)")
 
 	// port
 	RootCmd.PersistentFlags().IntVarP(&server.ServerPort, "port", "p", 8080, "port on which the server will listen")
@@ -65,8 +65,9 @@ func init() {
 	// interface
 	RootCmd.PersistentFlags().StringVarP(&server.ServerInterface, "bind", "", "0.0.0.0", "interface to which the server will bind")
 
-	// mock
-	RootCmd.PersistentFlags().StringVarP(&server.JsonFile, "data", "", "./example.json", "json to use for mocking data")
+	// data
+	RootCmd.PersistentFlags().StringVarP(&server.JSONFile, "data", "", "./example.json", "json to use for mocking data")
+
 }
 
 // initConfig reads in config file and ENV variables if set.

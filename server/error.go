@@ -19,3 +19,16 @@
 // THE SOFTWARE.
 
 package server
+
+import (
+	"fmt"
+	"net/http"
+)
+
+// ErrorHandler handles errors in the middleware
+func ErrorHandler(w http.ResponseWriter, r *http.Request, status int) {
+	w.WriteHeader(status)
+	if status == http.StatusNotFound {
+		fmt.Fprint(w, "404 - Not Found")
+	}
+}
