@@ -37,7 +37,7 @@ type InstanceIdentity struct {
 type InstanceIdentityDocument struct {
 	DevpayProductCodes string `json:"devpayProductCodes"`
 	AvailabilityZone   string `json:"availabilityZone"`
-	PrivateIP          string `json:"privateIpd"`
+	PrivateIP          string `json:"privateIp"`
 	Version            string `json:"version"`
 	InstanceID         string `json:"instanceId"`
 	InstanceType       string `json:"instanceType"`

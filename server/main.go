@@ -139,7 +139,7 @@ func HandleMetaData(c web.C, w http.ResponseWriter, r *http.Request) {
 		"security-groups":      &jsonObject.MetaData.SecurityGroups,
 	}
 
-	// endpoint
+	// parse data to endpoint
 	if endpoint, ok := endpoints[c.URLParams["endpoint"]]; ok {
 		// return endpoint
 		handleJSONEncode(w, endpoint)

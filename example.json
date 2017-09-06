@@ -4,7 +4,7 @@
       "document": {
         "devpayProductCodes": "null",
         "availabilityZone": "us-west-2b",
-        "privateIp": "10.158.112.84",
+        "privateIp": "10.158.112.85",
         "version": "2010-08-31",
         "instanceId": "i-1234567890abcdef0",
         "billingProducts": null,
