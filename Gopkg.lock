@@ -20,6 +20,12 @@
   version = "v1.0"
 
 [[projects]]
+  branch = "master"
+  name = "github.com/katallaxie/ec2-metadata"
+  packages = ["cmd","server"]
+  revision = "cf9db65b95afd4bff68cf3f255d3099787c1da85"
+
+[[projects]]
   name = "github.com/magiconair/properties"
   packages = ["."]
   revision = "be5ece7dd465ab0765a9682137865547526d1dfb"
@@ -112,6 +118,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "a0482144373ed507f3df927cf66595d917cbd7939ad077525ecb3470dba36106"
+  inputs-digest = "ca3c4d1ddac5f0478ef61572717c61b7480bcd66796b8961fed702fc57eff9c6"
   solver-name = "gps-cdcl"
   solver-version = 1

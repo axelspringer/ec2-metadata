@@ -129,6 +129,7 @@ func HandleMetaData(c web.C, w http.ResponseWriter, r *http.Request) {
 		"local-ipv4":           &jsonObject.MetaData.LocalIpv4,
 		"availability-zone":    &jsonObject.MetaData.AvailabilityZone,
 		"hostname":             &jsonObject.MetaData.Hostname,
+		"instance-id":          &jsonObject.MetaData.InstanceID,
 		"instance-action":      &jsonObject.MetaData.InstanceAction,
 		"instance-type":        &jsonObject.MetaData.InstanceType,
 		"mac":                  &jsonObject.MetaData.Mac,
