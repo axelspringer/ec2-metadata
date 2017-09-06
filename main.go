@@ -21,7 +21,7 @@
 package main
 
 import (
-	"github.com/katallaxie/ec2-metadata/cmd"
+	"github.com/axelspringer/ec2-metadata/cmd"
 )
 
 func main() {

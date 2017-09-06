@@ -24,7 +24,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/katallaxie/ec2-metadata/server"
+	"github.com/axelspringer/ec2-metadata/server"
 	homedir "github.com/mitchellh/go-homedir"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"

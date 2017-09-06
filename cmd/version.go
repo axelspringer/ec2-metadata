@@ -17,7 +17,7 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/katallaxie/ec2-metadata/server"
+	"github.com/axelspringer/ec2-metadata/server"
 	"github.com/spf13/cobra"
 )
 

@@ -1,5 +1,5 @@
 FROM alpine:3.6
-MAINTAINER Sebastian Döll <sebastian@katallaxie.me>
+MAINTAINER Sebastian Döll <sebastian.doell@axelspringer.com>
 
 RUN \
     apk --update add ca-certificates \
