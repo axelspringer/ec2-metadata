@@ -91,7 +91,7 @@ func (s *Server) Run(cmd *cobra.Command, args []string) {
 	// seems complicated
 	goji.Handle("/:version/user-data", HandleUserData)
 	goji.Handle("/:version/meta-data/:endpoint", HandleMetaData)
-	goji.Handle("/:version/dynamic/:endpoint", HandleDynamicData)
+	goji.Handle("/:version/dynamic/instance-identity/:endpoint", HandleInstanceIdentity)
 
 	// serve the mocks
 	goji.Serve()
@@ -151,11 +151,27 @@ func HandleMetaData(c web.C, w http.ResponseWriter, r *http.Request) {
 	return
 }
 
-// HandleDynamicData returns dynamic metadata
-func HandleDynamicData(c web.C, w http.ResponseWriter, r *http.Request) {
+// HandleInstanceIdentity returns dynamic date for instance document
+func HandleInstanceIdentity(c web.C, w http.ResponseWriter, r *http.Request) {
+	// construct identity document
+	identityDocument := map[string]interface{}{
+		"devpayProductCode": &jsonObject.DynamicData.InstanceIdentity.Document.DevpayProductCodes,
+		"availabilityZone":  &jsonObject.DynamicData.InstanceIdentity.Document.AvailabilityZone,
+		"privateIp":         &jsonObject.DynamicData.InstanceIdentity.Document.PrivateIP,
+		"version":           &jsonObject.DynamicData.InstanceIdentity.Document.Version,
+		"instanceId":        &jsonObject.DynamicData.InstanceIdentity.Document.InstanceID,
+		"instanceType":      &jsonObject.DynamicData.InstanceIdentity.Document.InstanceType,
+		"accountId":         &jsonObject.DynamicData.InstanceIdentity.Document.AccountID,
+		"pendingTime":       &jsonObject.DynamicData.InstanceIdentity.Document.PendingTime,
+		"architecture":      &jsonObject.DynamicData.InstanceIdentity.Document.Architecture,
+		"kernelId":          &jsonObject.DynamicData.InstanceIdentity.Document.KernelID,
+		"ramdiskId":         &jsonObject.DynamicData.InstanceIdentity.Document.RAMDiskID,
+		"region":            &jsonObject.DynamicData.InstanceIdentity.Document.Region,
+	}
+
 	// construct endpoints
 	endpoints := map[string]interface{}{
-		"identity-document": &jsonObject.DynamicData.InstanceIdentity,
+		"document": identityDocument,
 	}
 
 	// endpoint

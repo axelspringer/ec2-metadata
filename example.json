@@ -24,7 +24,7 @@
     "environment_name" : "Development",
     "app_code" : "mock",
     "app_name" : "mock_app",
-    "app_email" : "nobody@nytimes.com",
+    "app_email" : "nobody@axelspringer.de",
     "app_description": "Mock Metadata Description",
     "cluster_code" : "cluster_code",
     "cluster_name" : "cluser_name",
